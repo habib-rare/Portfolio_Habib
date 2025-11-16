@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Pribadi - Habib</title>
+    <!-- Favicon sederhana (SVG data URI) -->
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%233b82f6'/%3E%3Ctext x='50' y='57' font-size='50' text-anchor='middle' fill='white' font-family='Arial' %3EF%3C/text%3E%3C/svg%3E">
+        <link rel="stylesheet" href="Proyek Mandiri.css">
+    <!-- Tema warna & font -->
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header-inner">
+                <div class="brand">
+                    <div class="logo"> H </div>
+                    <div>
+                        <div style="font-weight:700">Habiburrahman Mannuntungi</div>
+                        <div style="font-size:13px;color:rgba(255,255,255,0.85)">MAN IC Gowa • Student</div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#edu">Pendidikan</a></li>
+                        <li><a href="#projects">Proyek</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- BERANDA -->
+            <section id="home" class="hero">
+                <div>
+                    <h1>Hai! Saya <span style="color:var(--primary)">Habib</span></h1>
+                    <p>Saya membuat website yang sederhana, responsif, dan rapi. Selamat datang di portofolio saya —
+                        lihat beberapa proyek dan karya saya di bawah.</p>
+                    <div class="cta">
+                        <a class="btn btn-primary" href="#projects">Lihat Proyek</a>
+                        <a class="btn btn-outline" href="resume.pdf" download style="margin-left:8px">Unduh CV</a>
+                    </div>
+                </div>
+                <aside class="profile-photo">
+                    <!-- Ganti src dengan foto diri nyata -->
+                    <img src="https://picsum.photos/seed/pfp/600/600" alt="Foto Profil">
+                </aside>
+            </section>
+
+            <!-- TENTANG SAYA -->
+            <section id="about" class="card">
+                <h2>Tentang Saya</h2>
+                <p style="color:var(--muted);margin-top:8px">Biodata singkat: Saya [Nama], pelajar/mahasiswa yang
+                    tertarik pada pengembangan web dan desain UI. Tujuan karier: menjadi front-end developer yang mahir
+                    membuat antarmuka intuitif dan responsif.</p>
+                <ul style="margin-top:12px;list-style:disc;padding-left:18px;color:var(--muted)">
+                    <li>Minat: Web Development, UI/UX, Desain Grafis</li>
+                    <li>Skills: HTML5, CSS3 (Flexbox & Grid), dasar JS</li>
+                    <li>Bahasa: Indonesia, English (dasar)</li>
+                </ul>
+            </section>
+
+            <!-- PENDIDIKAN / PENGALAMAN -->
+            <section id="edu" class="card">
+                <h2>Pendidikan & Pengalaman</h2>
+                <div class="timeline" style="margin-top:12px">
+                    <div class="timeline-item">
+                        <div class="dot">2023</div>
+                        <div>
+                            <strong>SMA Negeri Contoh</strong>
+                            <div style="color:var(--muted);font-size:13px">Program IPA — Aktif dalam klub komputer</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="dot">2024</div>
+                        <div>
+                            <strong>Pelatihan Web Dasar</strong>
+                            <div style="color:var(--muted);font-size:13px">Mempelajari HTML, CSS, konsep responsif</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROYEK / KARYA -->
+            <section id="projects" class="card">
+                <h2>Proyek & Karya</h2>
+                <div class="projects" style="margin-top:12px">
+                    <article class="project">
+                        <h3>Desain Website Sekolah</h3>
+                        <p style="color:var(--muted);font-size:14px">Sebuah mockup satu halaman untuk organisasi sekolah
+                            dengan tata letak grid.</p>
+                        <p style="margin-top:8px"><a href="#" class="btn btn-outline">Lihat detail</a></p>
+                    </article>
+                    <article class="project">
+                        <h3>Diagram Aktivitas</h3>
+                        <p style="color:var(--muted);font-size:14px">Diagram sederhana yang dibuat untuk tugas mata
+                            pelajaran.</p>
+                        <p style="margin-top:8px"><a href="#" class="btn btn-outline">Lihat gambar</a></p>
+                    </article>
+                    <article class="project">
+                        <h3>Aplikasi To‑Do (UI)</h3>
+                        <p style="color:var(--muted);font-size:14px">Prototype antarmuka aplikasi to-do menggunakan
+                            HTML/CSS.</p>
+                        <p style="margin-top:8px"><a href="#" class="btn btn-outline">Demo</a></p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- GALERI / GAMBAR -->
+            <section id="gallery" class="card">
+                <h2>Galeri</h2>
+                <div class="gallery" style="margin-top:12px">
+                    <img src="https://picsum.photos/seed/gal1/400/300" alt="galeri-1">
+                    <img src="https://picsum.photos/seed/gal2/400/300" alt="galeri-2">
+                    <img src="https://picsum.photos/seed/gal3/400/300" alt="galeri-3">
+                    <img src="https://picsum.photos/seed/gal4/400/300" alt="galeri-4">
+                    <img src="https://picsum.photos/seed/gal5/400/300" alt="galeri-5">
+                    <img src="https://picsum.photos/seed/gal6/400/300" alt="galeri-6">
+                </div>
+            </section>
+
+            <!-- KONTAK / MEDIA SOSIAL -->
+            <section id="contact" class="card">
+                <h2>Kontak</h2>
+                <div class="contact-grid" style="margin-top:12px">
+                    <div>
+                        <p style="color:var(--muted)">Ingin bekerja sama atau melihat lebih banyak karya? Kirim pesan
+                            singkat melalui form di samping atau hubungi lewat media sosial:</p>
+                        <ul style="margin-top:8px;list-style:none;padding-left:0">
+                            <li><strong>Instagram:</strong> <a href="#">@nama_anda</a></li>
+                            <li><strong>GitHub:</strong> <a href="#">github.com/nama_anda</a></li>
+                            <li><strong>Email:</strong> <a href="#">nama@contoh.com</a></li>
+                        </ul>
+                    </div>
+
+                    <aside>
+                        <!-- Contoh form sederhana (tanpa back-end). Gunakan action yang sesuai saat di-deploy -->
+                        <form action="mailto:nama@contoh.com" method="post" enctype="text/plain">
+                            <label for="name">Nama</label>
+                            <input id="name" name="name" required>
+
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required>
+
+                            <label for="msg">Pesan</label>
+                            <textarea id="msg" name="message" rows="5" required></textarea>
+
+                            <button class="btn btn-primary" type="submit">Kirim</button>
+                        </form>
+                    </aside>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="card" style="padding:12px;display:flex;justify-content:space-between;align-items:center">
+                <div>&copy; 2025 Nama Anda</div>
+                <div style="font-size:13px;color:var(--muted)">Dibuat dengan ❤️ menggunakan HTML & CSS</div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

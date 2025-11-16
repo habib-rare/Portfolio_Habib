@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+    }
+
+    /* Navbar utama */
+    .navbar {
+      background-color: #e74c3c;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+    }
+
+    .navbar a:hover {
+      background-color: #c0392b;
+    }
+
+    /* Dropdown disembunyikan secara default */
+    .dropdown-content {
+      display: none; /* 🔹 inilah kuncinya */
+      position: absolute;
+      background-color: #222;
+      min-width: 10px;
+      top: 100%;
+      left: 0;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      z-index: 100;
+    }
+
+    .dropdown-content a {
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #333;
+    }
+
+    /* 🔹 Tampilkan hanya saat hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">All Games (A-Z)</a></li>
+      <li class="dropdown">
+        <a href="#">Categories ▾</a>
+        <div class="dropdown-content">
+          <a href="#">Action</a>
+          <a href="#">Adventure</a>
+          <a href="#">Horror</a>
+          <a href="#">RPG</a>
+          <a href="#">Open World</a>
+        </div>
+      </li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
